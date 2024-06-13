@@ -1,5 +1,7 @@
-package io.quarkus.workshop.superheroes.villain;
+package io.quarkus.workshop.superheroes.villain.resource;
 
+import io.quarkus.workshop.superheroes.villain.service.VillainService;
+import io.quarkus.workshop.superheroes.villain.entity.Villain;
 import jakarta.inject.Inject;
 
 import jakarta.validation.Valid;
@@ -25,7 +27,7 @@ import java.util.List;
 import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 
 @Path("/api/villains")
-@Tag(name = "Villains")
+@Tag(name = "Villains", description = "API for managing villains, including operations to retrieve, insert, update, or delete villain records. ")
 public class VillainResource {
 
     @Inject
