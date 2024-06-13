@@ -13,7 +13,7 @@ import static jakarta.transaction.Transactional.TxType.SUPPORTS;
 
 @ApplicationScoped
 @Transactional(REQUIRED)
-public class VillainServiceImpl {
+public class VillainServiceImpl implements VillainService {
 
     @ConfigProperty(name = "level.multiplier", defaultValue = "1.0")
     double levelMultiplier;
