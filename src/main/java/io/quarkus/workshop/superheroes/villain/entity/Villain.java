@@ -1,4 +1,4 @@
-package io.quarkus.workshop.superheroes.villain;
+package io.quarkus.workshop.superheroes.villain.entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.Column;
